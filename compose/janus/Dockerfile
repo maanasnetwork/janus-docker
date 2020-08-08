@@ -1,6 +1,5 @@
 ############################################################
 # Dockerfile - Janus Gateway on Debian Buster
-# https://github.com/minelytics/janus-gateway-docker
 ############################################################
 
 FROM buildpack-deps:buster
