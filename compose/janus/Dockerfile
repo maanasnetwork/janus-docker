@@ -60,7 +60,7 @@ RUN make && make install
 # libsrtp
 ENV LIBSRTP_VERSION 2.2.0
 WORKDIR /build
-RUN apt-get remove -y libsrtp0-dev 
+# RUN apt-get remove -y libsrtp0-dev 
 RUN wget https://github.com/cisco/libsrtp/archive/v$LIBSRTP_VERSION.tar.gz 
 RUN tar xfvz v$LIBSRTP_VERSION.tar.gz
 WORKDIR /build/libsrtp-$LIBSRTP_VERSION
