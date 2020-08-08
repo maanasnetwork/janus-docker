@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  janus:
+    image: harbor.minelytics.in/vlive/janus:latest
+    build:
+      context: .
+      dockerfile: ./compose/janus/Dockerfile
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+    ports:
+      - 7889:7889
+      - 8088:8088
+      - 8089:8089
+      - 8188:8188
+    # command: "/opt/janus/bin/janus --nat-1-1=172.104.182.227"
+    # command: "/opt/janus/bin/janus --stun-server=stun.l.google.com:19302"
