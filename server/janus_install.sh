@@ -1,6 +1,5 @@
 ############################################################
 # Build - Janus Gateway on Debian Buster
-# https://github.com/minelytics/janus-gateway-docker
 ############################################################
 
 export LC_ALL=en_US.UTF-8
